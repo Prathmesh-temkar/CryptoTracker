@@ -6,6 +6,7 @@ import { useGetCryptosQuery } from "../services/cryptoApi";
 import Cryptocurrencies from "./Cryptocurrencies";
 import News from "./News";
 import Loader from "./Loader";
+import Hero from "./Hero";
 
 const { Title } = Typography;
 
@@ -17,10 +18,10 @@ const Homepage = () => {
   if (isFetching) return <Loader />;
   return (
     <>
+      <Hero />
       <Title level={2} className="heading">
         Global Crypto Stats
       </Title>
-      <Row className="img-heading"></Row>
       <Row>
         <Col span={12}>
           <Statistic
