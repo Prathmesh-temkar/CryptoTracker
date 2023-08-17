@@ -35,7 +35,7 @@ a:hover {
   overflow: hidden;
 }
 .routes {
-  padding: 20px;
+  padding: 10px;
 }
 .nav-container {
   position: fixed;
@@ -135,7 +135,7 @@ a:hover {
     font-size: 1.4rem !important;
   }
   .show-more {
-    font-size: 1.3rem !important;
+    font-size: 0.8rem !important;
   }
 }
 
@@ -297,7 +297,8 @@ a:hover {
   width: 180px;
 }
 .news-card {
-  min-height: 300px !important;
+  height: 300px !important;
+  width: 400px;
 }
 .news-image-container {
   display: flex !important;
@@ -352,7 +353,16 @@ a:hover {
   margin-top: 40px;
 }
 .show-more {
+  border: 1px solid;
+  padding: 5px;
+  border-radius: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
   margin-top: 0px !important;
+  background-color: #001529;
+  margin: 5px;
+  opacity: 0.8;
 }
 .exchange-image {
   margin: 0px 10px !important;
@@ -366,9 +376,15 @@ a:hover {
 }
 .crypto-card {
   min-width: 250px;
+  min-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #001529;
+  color: #fff;
 }
 .crypto-card .crypto-image {
-  width: 35px;
+  width: 100px;
 }
 .select-timeperiod {
   width: 200px !important;
@@ -410,6 +426,11 @@ a:hover {
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
 }
 
 /* .hero-text h1 {
@@ -430,6 +451,13 @@ a:hover {
 
 .react-horizontal-scrolling-menu--scroll-container::-webkit-scrollbar {
   display: none;
+}
+
+.react-horizontal-scrolling-menu--arrow-right {
+  align-items: center;
+}
+.react-horizontal-scrolling-menu--arrow-left {
+  align-items: center;
 }
 
 .react-horizontal-scrolling-menu--scroll-container {

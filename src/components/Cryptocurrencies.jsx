@@ -28,7 +28,7 @@ const Cryptocurrencies = ({ simplified }) => {
   return (
     <>
       {simplified ? (
-        <HorizontalScrollingMenu items={cryptos} />
+        <HorizontalScrollingMenu  items={cryptos} />
       ) : (
         <div>
           <div className="search-crypto">

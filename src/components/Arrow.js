@@ -1,24 +1,23 @@
 import React from "react";
 
 import { VisibilityContext } from "react-horizontal-scrolling-menu";
+import { LeftCircleOutlined, RightCircleOutlined } from "@ant-design/icons";
+import { Link } from "react-router-dom";
 
 function Arrow({ children, disabled, onClick }) {
   return (
-    <button
+    <Link
       disabled={disabled}
       onClick={onClick}
       style={{
         cursor: "pointer",
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
         right: "1%",
-        display: disabled ? "none" : "block",
+        display: disabled ? "none" : "inline-block",
         userSelect: "none",
       }}
     >
       {children}
-    </button>
+    </Link>
   );
 }
 
@@ -38,7 +37,7 @@ export function LeftArrow() {
 
   return (
     <Arrow disabled={disabled} onClick={() => scrollPrev()}>
-      Left
+      <LeftCircleOutlined style={{ fontSize: "30px" }} />
     </Arrow>
   );
 }
@@ -59,7 +58,7 @@ export function RightArrow() {
 
   return (
     <Arrow disabled={disabled} onClick={() => scrollNext()}>
-      Right
+      <RightCircleOutlined style={{ fontSize: "30px" }} />
     </Arrow>
   );
 }

@@ -10,7 +10,7 @@ const RootLayout = () => {
         <Navbar />
       </div>
       <div className="main">
-        <Layout>
+        <Layout style={{ paddingBottom: "20px" }}>
           <div className="routes">
             <Outlet />
           </div>
