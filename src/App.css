@@ -94,6 +94,7 @@ a:hover {
   .main {
     margin-left: 100px;
     padding-left: 20px;
+    overflow: hidden;
   }
 }
 
@@ -297,8 +298,8 @@ a:hover {
   width: 180px;
 }
 .news-card {
-  height: 300px !important;
-  width: 400px;
+  height: 400px !important;
+  width: 300px;
 }
 .news-image-container {
   display: flex !important;
@@ -463,4 +464,8 @@ a:hover {
 .react-horizontal-scrolling-menu--scroll-container {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
+}
+
+.ant-statistic-title {
+  color: #fff !important;
 }

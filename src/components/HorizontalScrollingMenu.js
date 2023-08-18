@@ -17,7 +17,12 @@ const HorizontalScrollingMenu = ({ items, news }) => {
       <ScrollMenu LeftArrow={LeftArrow} RightArrow={RightArrow}>
         {news
           ? items.map((item, index) => (
-              <Card hoverable className="news-card" itemId={index} key={index}>
+              <Card
+                hoverable
+                className="news-card"
+                itemId={item.name}
+                key={item.name}
+              >
                 <a href={item.url} target="_blank" rel="noreferrer">
                   <img
                     src={item?.image?.thumbnail?.contentUrl || demoImage}

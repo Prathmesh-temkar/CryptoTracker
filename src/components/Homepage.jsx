@@ -1,6 +1,6 @@
 import React from "react";
 import millify from "millify";
-import { Typography, Row, Col, Statistic } from "antd";
+import { Typography, Row, Col, Statistic, Card } from "antd";
 import { Link } from "react-router-dom";
 import { useGetCryptosQuery } from "../services/cryptoApi";
 import Cryptocurrencies from "./Cryptocurrencies";
@@ -21,36 +21,51 @@ const Homepage = () => {
       <Title level={2} className="heading">
         Global Crypto Stats
       </Title>
-      <Row className="global-stats-container">
+      <Row className="global-stats-container" gutter={[15, 15]}>
         <Col span={12}>
-          <Statistic
-            title="Total Cryptocurrencies"
-            value={globalStats?.total}
-          />
+          <Card bordered={false} style={{ backgroundColor: "#001529" }}>
+            <Statistic
+              title="Total Cryptocurrencies"
+              value={globalStats?.total}
+              valueStyle={{ color: "#fff" }}
+            />
+          </Card>
         </Col>
         <Col span={12}>
-          <Statistic
-            title="Total Exchanges"
-            value={millify(globalStats?.totalExchanges)}
-          />
+          <Card bordered={false} style={{ backgroundColor: "#001529" }}>
+            <Statistic
+              title="Total Exchanges"
+              value={millify(globalStats?.totalExchanges)}
+              valueStyle={{ color: "#fff" }}
+            />
+          </Card>
         </Col>
         <Col span={12}>
-          <Statistic
-            title="Total Market Cap"
-            value={millify(globalStats?.totalMarketCap)}
-          />
+          <Card bordered={false} style={{ backgroundColor: "#001529" }}>
+            <Statistic
+              title="Total Market Cap"
+              value={millify(globalStats?.totalMarketCap)}
+              valueStyle={{ color: "#fff" }}
+            />
+          </Card>
         </Col>
         <Col span={12}>
-          <Statistic
-            title="Total 24h Voulme"
-            value={millify(globalStats?.total24hVolume)}
-          />
+          <Card bordered={false} style={{ backgroundColor: "#001529" }}>
+            <Statistic
+              title="Total 24h Voulme"
+              value={millify(globalStats?.total24hVolume)}
+              valueStyle={{ color: "#fff" }}
+            />
+          </Card>
         </Col>
         <Col span={12}>
-          <Statistic
-            title="Total Markets"
-            value={millify(globalStats?.totalMarkets)}
-          />
+          <Card bordered={false} style={{ backgroundColor: "#001529" }}>
+            <Statistic
+              title="Total Markets"
+              value={millify(globalStats?.totalMarkets)}
+              valueStyle={{ color: "#fff" }}
+            />
+          </Card>
         </Col>
       </Row>
       <div id="news">
